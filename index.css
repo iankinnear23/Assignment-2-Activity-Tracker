@@ -1,0 +1,143 @@
+body,
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "section"
+    "footer";
+}
+
+/*  GRID TEMPLATE AREAS */
+
+header {
+  grid-area: header;
+  font-size: 1rem;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  justify-content: center;
+  border-top: black solid 0.1rem;
+}
+
+section {
+  grid-area: section;
+  display: grid;
+  justify-content: center;
+  border-top: black solid 0.1rem;
+}
+
+footer {
+  grid-area: footer;
+  border-top: black solid 0.1rem;
+}
+
+/* HEADER STYLING */
+
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MAIN STYLE */
+
+.activity-selection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  column-gap: 10rem;
+  align-items: center;
+}
+
+.circle-photo {
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* SECTION STYLE - PHOTO GALLERY */
+.img-gallery {
+  width: 80%;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+
+.img-gallery img {
+  width: 12rem;
+  height: 12rem;
+  cursor: pointer;
+}
+.img-gallery img:hover {
+  transform: scale(0.8) rotate(-15deg);
+  border-radius: 20px;
+  box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+
+.full-img {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.full-img img {
+  width: 90%;
+  max-width: 500px;
+}
+
+.full-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #ffff;
+  cursor: pointer;
+}
+/* FOOTER STYLE */
+
+.footer-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+/* MOBILE DEVICES */
+
+@media (max-width: 768px) {
+  .activity-selection {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+  .circle-photo {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .img-gallery {
+    grid-template-columns: 1fr;
+  }
+}

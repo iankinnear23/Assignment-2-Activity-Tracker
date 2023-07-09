@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="java.js"></script>
+  </head>
+  <body>
+    <header><h1 class="header-title">My Activity Tracker</h1></header>
+    <main>
+      <div class="activity-selection">
+        <a href="walk.html"
+          ><div
+            class="circle-photo"
+            style="background-image: url('images/walk.jpg')"
+          ></div
+        ></a>
+        <a href="run.html"
+          ><div
+            class="circle-photo"
+            style="background-image: url('images/run.jpg')"
+          ></div
+        ></a>
+        <a href="soccer.html"
+          ><div
+            class="circle-photo"
+            style="background-image: url('images/soccer.jpg')"
+          ></div
+        ></a>
+        <a href="swim.html"
+          ><div
+            class="circle-photo"
+            style="background-image: url('images/swim.jpg')"
+          ></div
+        ></a>
+        <a href="cycle.html"
+          ><div
+            class="circle-photo"
+            style="background-image: url('images/cycle.jpg')"
+          ></div
+        ></a>
+        <a href="golf.html"
+          ><div
+            class="circle-photo"
+            style="background-image: url('images/golf.jpg')"
+          ></div
+        ></a>
+      </div>
+    </main>
+    <section>
+      <div class="full-img" id="fullImgBox">
+        <img src="images2/Untitled design (16).jpg" id="fullImg" />
+        <span onclick="closeFullImg()">x</span>
+      </div>
+      <div class="img-gallery">
+        <img
+          src="images2/Untitled design (17).jpg"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="images2/Untitled design (18).jpg"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="images2/Untitled design (19).jpg"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="images2/Untitled design (20).jpg"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="images2/Untitled design (21).jpg"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="images2/Untitled design (22).jpg"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="images2/Untitled design (23).jpg"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="images2/Untitled design (24).jpg"
+          onclick="openFullImg(this.src)"
+        />
+      </div>
+    </section>
+    <footer>
+      <h2 class="footer-title">Website designed by Ian Kinnear</h2>
+    </footer>
+    <script src="style.js"></script>
+  </body>
+</html>
