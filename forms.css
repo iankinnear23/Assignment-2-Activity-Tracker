@@ -126,6 +126,6 @@ input[type="text"] {
     grid-template-rows: none;
   }
   .photo-gallery img {
-    margin-left: 2.5rem;
+    margin-left: 2rem;
   }
 }
