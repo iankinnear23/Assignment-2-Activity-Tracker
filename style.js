@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const logEntry = document.createElement("p");
     logEntry.textContent = ` Great job, you did a total of ${stepsInput} steps in ${minutesInput} minutes.`;
-    logEntry.style.fontFamily = "Arial, sans-serif";
+    logEntry.style.fontFamily = "monospace";
     logEntry.style.color = "red";
 
     display.appendChild(logEntry);
