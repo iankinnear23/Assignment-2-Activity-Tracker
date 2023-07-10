@@ -114,10 +114,13 @@ input[type="text"] {
   section {
     grid-template-columns: 1fr;
     grid-template-rows: none;
-    margin-left: 2rem;
   }
+
   main {
     grid-template-columns: 1fr;
     grid-template-rows: none;
+  }
+  .photo-gallery img {
+    margin-left: 2.5rem;
   }
 }
