@@ -48,7 +48,7 @@ function resetColor() {
 }
 function changeBackgroundColor() {
   document.getElementById("main-col").style.background =
-    "url('images3/bk.jpg')";
+    "url('images3/backr.jpg')";
 }
 
 function resetBackgroundColor() {
@@ -57,7 +57,7 @@ function resetBackgroundColor() {
 
 function changeBackgroundColorGaller() {
   document.getElementById("gallery-col").style.background =
-    "url('images3/bk.jpg')";
+    "url('images3/backr.jpg')";
 }
 
 function resetBackgroundColorGallery() {
