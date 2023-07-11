@@ -40,26 +40,32 @@ document.addEventListener("DOMContentLoaded", function () {
 //my code for changing the color of my heading
 
 function changeColor() {
-  document.getElementById("h1-col").style.color = "#84e4a8";
+  if (window.innerWidth > 1000)
+    document.getElementById("h1-col").style.color = "#84e4a8";
 }
 
 function resetColor() {
-  document.getElementById("h1-col").style.color = "";
+  if (window.innerWidth > 1000)
+    document.getElementById("h1-col").style.color = "";
 }
 function changeBackgroundColor() {
-  document.getElementById("main-col").style.background =
-    "url('images3/backr.jpg')";
+  if (window.innerWidth > 1000)
+    document.getElementById("main-col").style.background =
+      "url('images3/backr.jpg')";
 }
 
 function resetBackgroundColor() {
-  document.getElementById("main-col").style.background = "";
+  if (window.innerWidth > 1000)
+    document.getElementById("main-col").style.background = "";
 }
 
 function changeBackgroundColorGaller() {
-  document.getElementById("gallery-col").style.background =
-    "url('images3/backr.jpg')";
+  if (window.innerWidth > 1000)
+    document.getElementById("gallery-col").style.background =
+      "url('images3/backr.jpg')";
 }
 
 function resetBackgroundColorGallery() {
-  document.getElementById("gallery-col").style.background = "";
+  if (window.innerWidth > 1000)
+    document.getElementById("gallery-col").style.background = "";
 }
