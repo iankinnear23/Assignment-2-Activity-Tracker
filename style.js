@@ -1,3 +1,5 @@
+//my code for photo gallery
+
 let fullImgBox = document.getElementById("fullImgBox");
 let fullImg = document.getElementById("fullImg");
 
@@ -9,6 +11,8 @@ function openFullImg(pic) {
 function closeFullImg() {
   fullImgBox.style.display = "none";
 }
+
+//my code for adding functionality to the form
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("form");
@@ -32,3 +36,30 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("steps").value = "";
   });
 });
+
+//my code for changing the color of my heading
+
+function changeColor() {
+  document.getElementById("h1-col").style.color = "#84e4a8";
+}
+
+function resetColor() {
+  document.getElementById("h1-col").style.color = "";
+}
+function changeBackgroundColor() {
+  document.getElementById("main-col").style.background =
+    "url('images3/bk.jpg')";
+}
+
+function resetBackgroundColor() {
+  document.getElementById("main-col").style.background = "";
+}
+
+function changeBackgroundColorGaller() {
+  document.getElementById("gallery-col").style.background =
+    "url('images3/bk.jpg')";
+}
+
+function resetBackgroundColorGallery() {
+  document.getElementById("gallery-col").style.background = "";
+}

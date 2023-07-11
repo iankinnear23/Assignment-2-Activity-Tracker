@@ -3,12 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Activity Tracker</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header><h1 class="header-title">My Activity Tracker</h1></header>
-    <main>
+    <header>
+      <h1
+        class="header-title"
+        id="h1-col"
+        onmouseover="changeColor()"
+        onmouseout="resetColor()"
+      >
+        My Activity Tracker
+      </h1>
+    </header>
+    <main
+      id="main-col"
+      onmouseover="changeBackgroundColor()"
+      onmouseout="resetBackgroundColor()"
+    >
       <div class="activity-selection">
         <a href="walk.html"
           ><div
@@ -48,7 +61,11 @@
         ></a>
       </div>
     </main>
-    <section>
+    <section
+      id="gallery-col"
+      onmouseover="changeBackgroundColorGaller()"
+      onmouseout="resetBackgroundColorGallery()"
+    >
       <div class="full-img" id="fullImgBox">
         <img src="images2/Untitled design (16).jpg" id="fullImg" />
         <span onclick="closeFullImg()">x</span>
