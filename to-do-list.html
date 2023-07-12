@@ -5,23 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
     <link rel="stylesheet" href="to-do-list.css" />
-    <script src="style.js"></script>
   </head>
   <body>
-    <header class="header-main"><h1>My Activity Tracker</h1></header>
+    <header class="header-main">
+      <a href="index.html">
+        <h1
+          class="header-title1"
+          id="h1-col1"
+          onmouseover="changeColor1()"
+          onmouseout="resetColor1()"
+        >
+          My Activity Tracker
+        </h1>
+      </a>
+    </header>
+
     <section class="photo-main"><img src="images3/to-do.jpg" /></section>
 
     <main class="to-do-list-main">
       <div class="todo-app">
         <h2>To Do List <img src="images4/icon.png" /></h2>
         <div class="row">
-          <input type="text" id="input-box" placeholder="Add Your Text" />
-          <button>Add</button>
+          <input type="text" id="input-box" placeholder="Add Your Task" />
+          <button onclick="addTask()">Add</button>
         </div>
         <ul id="list-container">
-          <li>Task 1</li>
+          <!-- <li class="checked">Task 1</li>
           <li>Task 2</li>
-          <li>Task 3</li>
+          <li>Task 3</li> -->
         </ul>
       </div>
     </main>
@@ -29,5 +40,7 @@
     <footer class="footer-main">
       <h2 class="footer-title">Website designed by Ian Kinnear</h2>
     </footer>
+
+    <script src="style.js"></script>
   </body>
 </html>

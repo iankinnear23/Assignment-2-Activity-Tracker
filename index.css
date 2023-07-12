@@ -51,6 +51,24 @@ footer {
 .header-tile:hover {
   color: red;
 }
+header a {
+  text-decoration: none;
+}
+header a button {
+  display: block;
+  margin: 10px auto;
+}
+
+header a button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  border-radius: 40px;
+}
 
 /* MAIN STYLE */
 
